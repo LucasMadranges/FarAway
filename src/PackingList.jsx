@@ -1,6 +1,6 @@
 import Item from "./Item.jsx";
 
-export default function PackingList({items, onDeleteItems}) {
+export default function PackingList({items, onDeleteItems, onToggleItem}) {
     return (
         <div className="list">
             <ul>
@@ -9,6 +9,7 @@ export default function PackingList({items, onDeleteItems}) {
                         return (
                             <Item key={item.id}
                                   item={item}
+                                  onToggleItem={onToggleItem}
                                   onDeleteItems={onDeleteItems}/>
                         )
                     })
