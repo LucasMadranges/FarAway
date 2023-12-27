@@ -27,7 +27,7 @@ export default function App() {
                 <PackingList onDeleteItems={handleDeleteItems}
                              onToggleItem={handleToggleItem}
                              items={items}/>
-                <Stats/>
+                <Stats items={items}/>
             </div>
         </>
     )
